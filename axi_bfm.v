@@ -27,10 +27,7 @@ module bfm (
     output reg [15:0] led
 );
 
-    reg [16:0] clk_div;
 
-    always @(posedge clk) 
-        clk_div <= clk_div + 1;
 
     wire wr_rd;
     assign wr_rd = sw15 ? 1 : 0;
