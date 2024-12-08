@@ -111,10 +111,10 @@ event complete;
      axi_aresetn     <= 1'b0; 
      write           <= 1'b0; 
      read            <= 1'b0; 
-     user_waddr      <= 1'b0; 
-     user_wdata      <= 1'b0; 
-     user_raddr      <= 1'b0; 
-     user_rdata      <= 1'b0; 
+     user_waddr      <= 0; 
+     user_wdata      <= 0; 
+     user_raddr      <= 0; 
+     user_rdata      <= 0; 
     
      #40;    
      axi_aresetn <= 1'b1;
